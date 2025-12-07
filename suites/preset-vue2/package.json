@@ -1,0 +1,59 @@
+{
+  "name": "@dumijs/preset-vue2",
+  "version": "2.4.14",
+  "description": "Vue 2 support plugins for dumi",
+  "keywords": [
+    "dumi",
+    "plugin",
+    "preset",
+    "vue",
+    "vue2"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "lib",
+    "dist",
+    "compiled"
+  ],
+  "scripts": {
+    "build": "father build && tsup --minify",
+    "build:deps": "father prebundle",
+    "build:lib": "tsup --minify",
+    "dev": "father dev",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@dumijs/vue-meta": "workspace:*",
+    "@types/hash-sum": "^1.0.0",
+    "@umijs/bundler-webpack": "^4.0.81",
+    "@vue/babel-preset-jsx": "^1.4.0",
+    "codesandbox-import-utils": "^2.2.3",
+    "compare-versions": "^6.1.0",
+    "hash-sum": "^2.0.0",
+    "vue": "^2.7.16",
+    "vue-docgen-api": "^4.79.2",
+    "vue-loader": "^15.11.1",
+    "vue-template-compiler": "^2.7.16"
+  },
+  "devDependencies": {
+    "@types/babel__core": "^7.20.5",
+    "@types/babel__standalone": "^7.1.7",
+    "babel-core": "^6.26.3",
+    "dumi": "workspace:*",
+    "father": "^4.1.9",
+    "tsup": "^8.0.1",
+    "underscore": "^1.13.7"
+  },
+  "peerDependencies": {
+    "dumi": "^2.0.0",
+    "vue": "^2.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "authors": [
+    "jeffwcx <jeffwcx@icloud.com>"
+  ]
+}

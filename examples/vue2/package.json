@@ -1,0 +1,31 @@
+{
+  "name": "@examples/vue2",
+  "private": true,
+  "description": "A Vue2 component library",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/umijs/dumi",
+    "directory": "examples/vue2"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "node ../../bin/dumi.js build",
+    "dev": "node ../../bin/dumi.js dev",
+    "preview": "node ../../bin/dumi.js preview",
+    "setup": "node ../../bin/dumi.js setup",
+    "start": "npm run dev"
+  },
+  "dependencies": {
+    "ant-design-vue": "1.7.8",
+    "element-ui": "^2.15.14",
+    "react": "^18.2.0",
+    "vue": "^2.7.16"
+  },
+  "devDependencies": {
+    "@dumijs/preset-vue2": "workspace:*",
+    "dumi": "workspace:*",
+    "typescript": "~4.7.4",
+    "vue-template-compiler": "^2.7.16"
+  },
+  "authors": []
+}
